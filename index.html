@@ -441,6 +441,7 @@
 
         <div class="nav-segment right">
             <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -660,8 +661,8 @@
                 if (dist < 20) {
                     found = true;
                     tooltip.innerHTML = `<strong>${stat.label}</strong><br><span style="font-size:0.8rem; opacity:0.8">${stat.desc}</span>`;
-                    tooltip.style.left = `${e.pageX + 20}px`; // Use pageX/Y for fixed tooltip positioning relative to document
-                    tooltip.style.top = `${e.pageY - 20}px`;
+                    tooltip.style.left = `${mouseX + 20}px`; // CHANGED: Positioning relative to container, not page
+                    tooltip.style.top = `${mouseY - 20}px`;
                     tooltip.classList.add('visible');
                     chartCanvas.style.cursor = 'pointer';
                     activePoint = {x, y, val: stat.value}; 
