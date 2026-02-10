@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A E T H E R | Interactive Portfolio</title>
+    <title>Chinmay Patil|Investments and Growth Strategy</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -150,7 +151,28 @@
             color: #fff;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
+/* Update this existing class */
+.notch .logo {
+    display: flex;           /* Lines them up side-by-side */
+    align-items: center;     /* Centers them vertically */
+    gap: 12px;               /* Adds space between Icon and Text */
+}
 
+/* Add this new class for the text */
+.brand-name {
+    font-family: 'Space Grotesk', sans-serif; /* Matches your site font */
+    font-size: 1.2rem;       /* Adjust text size */
+    font-weight: 600;        /* Bold thickness */
+    letter-spacing: 3px;     /* Spacing for that "luxury" look */
+    color: #ffffff;          /* White text */
+}
+
+/* Ensure the SVG stays the right size */
+.notch .logo svg {
+    height: 28px;            /* Slightly smaller to match text balance */
+    width: auto;
+    display: block;
+}
         /* Flanking Menu Containers */
         .nav-segment {
             pointer-events: auto;
@@ -436,8 +458,37 @@
         </div>
         
         <div class="notch">
-            <div class="logo">A E T H E R</div>
-        </div>
+    <div class="logo">
+        
+        <svg viewBox="40 40 390 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="50%" stop-color="#E0E0E0" />
+                    <stop offset="100%" stop-color="#B0B0B0" />
+                </linearGradient>
+                <linearGradient id="obsidian" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4a4a4a" />
+                    <stop offset="50%" stop-color="#000000" />
+                    <stop offset="100%" stop-color="#4a4a4a" />
+                </linearGradient>
+                <style>
+                    .logo-body { stroke: url(#obsidian); }
+                    .logo-highlight { stroke: #000000; stroke-opacity: 0.2; }
+                    @media (prefers-color-scheme: dark) {
+                        .logo-body { stroke: url(#silver); }
+                        .logo-highlight { stroke: #FFFFFF; stroke-opacity: 0.3; }
+                    }
+                </style>
+            </defs>
+            <path class="logo-body" d="M 225 91 L 225 305 L 198 305 L 199 330 L 298 330 L 297 305 L 272 304 L 270 230 C 419 227 391 66 278 69 L 273 69 L 267 69 L 200 70 L 200 91 L 219 91 Z M 274 115 C 360 106 358 201 272 188 L 271 121 Z M 163 119 C 45 121 45 274 169 280 L 225 280 L 225 245 L 190 245 C 135 244 126 160 190 155 L 225 155 L 225 120 L 183 119 Z" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="logo-highlight" d="M175 275 C 175 220, 240 220, 240 275" stroke-width="4" stroke-linecap="round" transform="translate(2, -2)"/>
+        </svg>
+
+        <span class="brand-name">C H I N M A Y P A T I L</span>
+        
+    </div>
+</div>
 
         <div class="nav-segment right">
             <a href="#experience">Experience</a>
